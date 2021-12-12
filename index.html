@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ba3ae6fb31.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="fevicon/1.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <title>Ping Pong</title>
+</head>
+<body>
+  <!-- PlayGround -->
+  <div class="ground">
+    <div class="first_player">
+      <img src="Character/2.png" alt="">
+    </div>
+    <div class="ball">
+
+    </div>
+    <div class="second_player">
+      <img src="Character/3.png" alt="">
+    </div>
+  </div>
+
+  <!-- ControlPannel -->
+  <div class="control">
+    <div class="container">
+    <div class="game_name">
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        PiNG PoNG</a>
+      </div>
+
+    <span class="btn">
+      <button data-cmd="START">
+        START
+      </button>
+    </span>
+
+    <span class="btn">
+      <button data-cmd="RESTART">
+        RESTART
+      </button>
+    </span>
+
+    <table border="2" class="score_board">
+      <caption>SCORE-BOARD</caption>
+      <tr>
+      <td align="center">
+        <img src="Character/2.png" alt="">
+      </td>
+      <td align="center">
+        <img src="Character/3.png" alt="">
+      </td>
+      </tr>
+      <tr>
+        <td align="center" class="firstPlayer-score">
+          0
+        </td>
+        <td align="center"  class="secondPlayer-score">
+          0
+        </td>
+      </tr>
+    </table>
+    <div class="clock">
+      <span>Time</span><p class="counter">120</p><span>seconds</span>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
