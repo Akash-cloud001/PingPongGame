@@ -11,15 +11,15 @@
 </head>
 <body>
   <!-- PlayGround -->
-  <div class="ground">
-    <div class="first_player">
+  <div class="ground" id="groundid">
+    <div class="first_player" id="f_player">
       <img src="Character/2.png" alt="">
     </div>
-    <div class="ball">
+    <div class="ball" id="ballid">
 
     </div>
-    <div class="second_player">
-      <img src="Character/3.png" alt="">
+    <div class="second_player" id=s_player>
+      <img class="spider-man" src="Character/3.png" alt="">
     </div>
   </div>
 
@@ -27,48 +27,39 @@
   <div class="control">
     <div class="container">
     <div class="game_name">
-      <a href="#">
+      <a href="#" id="intro">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         PiNG PoNG</a>
       </div>
-
+      
+      <p>
+        Press Enter To Start<br>For Iron-Man use "A & D"<br>For Spidy use "4 & 6"
+      </p>
     <span class="btn">
-      <button data-cmd="START">
-        START
-      </button>
-    </span>
-
-    <span class="btn">
-      <button data-cmd="RESTART">
+      <!-- button to reload the page  -->
+      <button onclick="location.reload()">
         RESTART
       </button>
     </span>
 
     <table border="2" class="score_board">
-      <caption>SCORE-BOARD</caption>
+      <caption>PLAYERS</caption>
       <tr>
       <td align="center">
         <img src="Character/2.png" alt="">
       </td>
       <td align="center">
-        <img src="Character/3.png" alt="">
+        <img  src="Character/3.png" alt="">
       </td>
       </tr>
-      <tr>
-        <td align="center" class="firstPlayer-score">
-          0
-        </td>
-        <td align="center"  class="secondPlayer-score">
-          0
-        </td>
-      </tr>
     </table>
-    <div class="clock">
-      <span>Time</span><p class="counter">120</p><span>seconds</span>
-    </div>
+    
+    <p id="developer">
+      Developed By <a href="#">Akash Parmar</a>
+    </p>
   </div>
   </div>
   <script src="script.js"></script>
